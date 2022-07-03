@@ -3,18 +3,13 @@
 <% @blogs.each do |x| %>
 
 <div class="container is-fluid mt-5">
-
-<h2 class="title"><%= x.title %></h2>
+<h2 class="title"> <%= link_to x.title, blog_path(x.id) %></h2>
 <p class=""><%= x.excerpt %></p>
-
 </div>
+
 
 
 
 <% end %>
 
-<div class="container">
-<button class="button is-primary mt-6">
-  <%= link_to "Create a new post", new_blog_path %>
-</button>
-</div>
+

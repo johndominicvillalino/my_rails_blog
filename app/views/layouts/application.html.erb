@@ -9,19 +9,25 @@
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <%= stylesheet_link_tag "styles.css" %>
   </head>
 
   <body>
    <section class="hero is-medium is-primary" >
   <div class="hero-body">
-    <p class="title">
+  <%= link_to root_path do %>  
+  <p class="title">
       A Rails Blog
     </p>
-    <p class="subtitle">
-      Lorem Ipsom
-    </p>
+    <% end %>
+    <%= link_to new_blog_path do %>
+      <button class="button m-5">
+      Create a Post
+      </button>
+      <% end %>
   </div>
 </section>
+
     <%= yield %>
 
 
