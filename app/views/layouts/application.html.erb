@@ -15,9 +15,11 @@
   <body>
    <section class="hero is-medium is-primary" >
   <div class="hero-body">
-    <p class="title">
+  <%= link_to root_path do %>  
+  <p class="title">
       A Rails Blog
     </p>
+    <% end %>
     <%= link_to new_blog_path do %>
       <button class="button m-5">
       Create a Post
