@@ -1,3 +1,16 @@
-<div class="container is-fluid">
-<h1 class="title"> <%= @blog.title %> </h1> 
+<div class="container is-fluid mt-6">
+<h1 class="title is-1"> <%= @blog.title %> </h1> 
 </div>
+<div class="container is-fluid mt-6">
+<p class="is-3"><%= @blog.body %> </p> 
+</div>
+
+<div class="container is-fluid mt-6">
+<span>Written by: <%= @blog.author %></span>
+</div>
+
+<div class="container is-fluid mt-6">
+<%= link_to "Home", blogs_path%>
+</div>
+
+
