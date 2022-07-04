@@ -16,7 +16,6 @@ def edit
 end
 
 
-
 def create
     @blog = Blog.new(blog_params)
 
@@ -27,6 +26,7 @@ def create
         else
           format.html { render :new, status: :unprocessable_entity }
         end
+
       end
 
     
